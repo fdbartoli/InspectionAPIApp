@@ -23,6 +23,8 @@ import { InspectionApiService } from './inspection-api.service';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+
+
   ],
   providers: [InspectionApiService],
   bootstrap: [AppComponent]

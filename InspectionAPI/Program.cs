@@ -1,7 +1,7 @@
 using InspectionAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
-var myAllowSpecificOrigins = "myAllowSpecificOrigins";
+var myAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +17,7 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-//Enbale CORS
+//Enable CORS
 
 builder.Services.AddCors(options =>
 {

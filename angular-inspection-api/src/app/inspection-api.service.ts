@@ -6,13 +6,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class InspectionApiService {
+
   readonly inspectionAPIUrl = "https://localhost:7042/api";
+
   constructor(private http:HttpClient) { }
 
 
   //Inspection
 
-  getInspectionLIst():Observable<any[]>{
+  getInspectionList():Observable<any[]>{
     return this.http.get<any>(this.inspectionAPIUrl + '/inspections');
   }
 
@@ -32,7 +34,7 @@ export class InspectionApiService {
   //***********************************************
   //Inspection Types
 
-  getInspectionTypesLIst():Observable<any[]>{
+  getInspectionTypesList():Observable<any[]>{
     return this.http.get<any>(this.inspectionAPIUrl + '/inspectionsTypes');
   }
 
@@ -51,7 +53,7 @@ export class InspectionApiService {
   //*********************************************** 
   //Status
 
-  getStatusLIst():Observable<any[]>{
+  getStatusList():Observable<any[]>{
     return this.http.get<any>(this.inspectionAPIUrl + '/inspectionsStatus');
   }
 
