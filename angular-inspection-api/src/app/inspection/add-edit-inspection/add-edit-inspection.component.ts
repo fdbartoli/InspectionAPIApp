@@ -70,7 +70,7 @@ export class AddEditInspectionComponent implements OnInit {
         closeModalBtn.click();
       }
 
-      var showUpdateSuccess = document.getElementById('Update-success-alert');
+      var showUpdateSuccess = document.getElementById('update-success-alert');
       if(showUpdateSuccess){
         showUpdateSuccess.style.display = "block";
       }
@@ -80,7 +80,7 @@ export class AddEditInspectionComponent implements OnInit {
         }
       }, 4000);
     });
-
-
   }
+
+  
 }

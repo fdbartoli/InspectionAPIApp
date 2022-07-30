@@ -27,7 +27,7 @@ export class InspectionApiService {
   }
 
   deleteInspection(id:number|string){
-    return this.http.delete(this.inspectionAPIUrl + `/inspection(${id})`);
+    return this.http.delete(this.inspectionAPIUrl + `/inspections/${id}`);
   }
 
 
@@ -47,7 +47,7 @@ export class InspectionApiService {
   }
 
   deleteInspectionTypes(id:number|string){
-    return this.http.delete(this.inspectionAPIUrl + `/inspectionTypes(${id})`);
+    return this.http.delete(this.inspectionAPIUrl + `/inspectionTypes/${id}`);
   }
 
   //*********************************************** 
@@ -66,7 +66,7 @@ export class InspectionApiService {
   }
 
   deleteStatus(id:number|string){
-    return this.http.delete(this.inspectionAPIUrl + `/inspectionStatus(${id})`);
+    return this.http.delete(this.inspectionAPIUrl + `/Status/${id}`);
   }
 
 }
