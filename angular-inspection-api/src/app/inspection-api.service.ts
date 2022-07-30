@@ -54,15 +54,15 @@ export class InspectionApiService {
   //Status
 
   getStatusList():Observable<any[]>{
-    return this.http.get<any>(this.inspectionAPIUrl + '/inspectionsStatus');
+    return this.http.get<any>(this.inspectionAPIUrl + '/Status');
   }
 
   addStatus(data:any) {
-    return this.http.post(this.inspectionAPIUrl + '/inspectionsStatus', data);
+    return this.http.post(this.inspectionAPIUrl + '/Status', data);
   }
 
   updateStatus(id:number|string, data:any){
-    return this.http.put(this.inspectionAPIUrl + `/inspectionsStatus/${id}`, data);
+    return this.http.put(this.inspectionAPIUrl + `/Status/${id}`, data);
   }
 
   deleteStatus(id:number|string){
